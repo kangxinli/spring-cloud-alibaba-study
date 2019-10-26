@@ -17,5 +17,9 @@
 		<module>
 			microservice-consumer-movie-ribbon-rule-with-nacos
 		</module>
+
+		<module>nacos-config</module>
+		<module>nacos-discovery-provider</module>
+		<module>nacos-discovery-consumer</module>
 	</modules>
 </project>
