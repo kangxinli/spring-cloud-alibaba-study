@@ -21,5 +21,14 @@
 		<module>nacos-config</module>
 		<module>nacos-discovery-provider</module>
 		<module>nacos-discovery-consumer</module>
+		<module>
+			microservice-consumer-movie-ribbon-rule-with-nacos-2
+		</module>
+		<module>
+			microservice-consumer-movie-ribbon-sentinel-annotation
+		</module>
+		<module>
+			microservice-consumer-movie-ribbon-sentinel-block-handler
+		</module>
 	</modules>
 </project>
