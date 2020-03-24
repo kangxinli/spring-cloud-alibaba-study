@@ -9,11 +9,11 @@
 	<name>microservice-consumer-movie-ribbon-rule-with-nacos-2</name>
 	<url>http://maven.apache.org</url>
 
-	<!-- 引入spring boot的依赖 -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.4.RELEASE</version>
+		<relativePath></relativePath>
 	</parent>
 
 	<properties>
@@ -38,7 +38,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-			<version>0.2.2.RELEASE</version>
 		</dependency>
 	</dependencies>
 

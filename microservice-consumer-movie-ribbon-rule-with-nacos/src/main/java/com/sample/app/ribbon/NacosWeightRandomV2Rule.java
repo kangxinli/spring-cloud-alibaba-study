@@ -18,7 +18,7 @@ public class NacosWeightRandomV2Rule extends AbstractLoadBalancerRule {
 
     @Override
     public Server choose(Object key) {
-        DynamicServerListLoadBalancer loadBalancer = (DynamicServerListLoadBalancer) getLoadBalancer();
+        DynamicServerListLoadBalancer<?> loadBalancer = (DynamicServerListLoadBalancer<?>) getLoadBalancer();
         String name = loadBalancer.getName();
         try {
             Instance instance = discoveryProperties.namingServiceInstance()

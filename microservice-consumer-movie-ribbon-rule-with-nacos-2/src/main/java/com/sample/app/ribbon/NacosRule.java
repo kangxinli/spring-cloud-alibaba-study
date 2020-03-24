@@ -32,7 +32,7 @@ public class NacosRule extends AbstractLoadBalancerRule {
     public Server choose(Object key) {
         try {
             String clusterName = this.nacosDiscoveryProperties.getClusterName();
-            DynamicServerListLoadBalancer loadBalancer = (DynamicServerListLoadBalancer) getLoadBalancer();
+            DynamicServerListLoadBalancer<?> loadBalancer = (DynamicServerListLoadBalancer<?>) getLoadBalancer();
             String name = loadBalancer.getName();
 
             NamingService namingService = this.nacosDiscoveryProperties.namingServiceInstance();

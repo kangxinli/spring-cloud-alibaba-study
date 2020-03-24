@@ -45,7 +45,7 @@ public class NacosFinalRule extends AbstractLoadBalancerRule {
             String clusterName = this.nacosDiscoveryProperties.getClusterName();
             String targetVersion = this.nacosDiscoveryProperties.getMetadata().get("target-version");
 
-            DynamicServerListLoadBalancer loadBalancer = (DynamicServerListLoadBalancer) getLoadBalancer();
+            DynamicServerListLoadBalancer<?> loadBalancer = (DynamicServerListLoadBalancer<?>) getLoadBalancer();
             String name = loadBalancer.getName();
 
             NamingService namingService = this.nacosDiscoveryProperties.namingServiceInstance();
